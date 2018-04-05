@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Menu, Input } from "semantic-ui-react";
+import { Menu, Icon } from "semantic-ui-react";
 
 export default class App extends Component {
   constructor(props) {
@@ -13,29 +13,27 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
-        <Menu pointing secondary>
-          <Menu.Item name="Nav Component" />
+      <div className="Nav">
+        <Menu fluid widths={3} inverted color="blue">
           <Menu.Item
-            name="Active"
-            active={this.state.activeItem === "Active"}
-            onClick={this.handleItemClick}
-          />
+            name="instagram"
+            onClick={() =>
+              window.location.assign("https://www.instagram.com/the3dsandwich")
+            }
+          >
+            <Icon name="instagram" />
+            Instagram
+          </Menu.Item>
+          <Menu.Item name="音效懶人包" />
           <Menu.Item
-            name="Not Active"
-            active={this.state.activeItem === "Not Active"}
-            onClick={this.handleItemClick}
-          />
-          <Menu.Menu position="right">
-            <Menu.Item>
-              <Input icon="search" placeholder="Search..." />
-            </Menu.Item>
-            <Menu.Item
-              name="logout"
-              active={this.state.activeItem === "logout"}
-              onClick={this.handleItemClick}
-            />
-          </Menu.Menu>
+            name="facebook"
+            onClick={() =>
+              window.location.assign("https://www.facebook.com/duhweiwei")
+            }
+          >
+            <Icon name="facebook f" />
+            Facebook
+          </Menu.Item>
         </Menu>
       </div>
     );

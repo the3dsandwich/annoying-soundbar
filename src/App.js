@@ -3,9 +3,14 @@ import Main from "./components/Main";
 import Nav from "./components/Nav";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
     return (
-      <div className="main_container">
+      <div>
         <Nav />
         <Main />
       </div>
