@@ -27,8 +27,7 @@ export default class App extends Component {
               circle
               size="large"
               name="Wiiiiiiiii"
-              onClick={() => this.wiiiiiii.play()}
-            >
+              onClick={() => this.wiiiiiii.play()}>
               Wiiiiiiiiiiiiiiiii
             </Button>
           </Segment>
@@ -36,8 +35,7 @@ export default class App extends Component {
             <Button
               size="large"
               name="Awkward"
-              onClick={() => this.awkward.play()}
-            >
+              onClick={() => this.awkward.play()}>
               我最喜歡尷尬了！
             </Button>
           </Segment>
@@ -45,8 +43,7 @@ export default class App extends Component {
             <Button
               size="large"
               name="MakeAwkward"
-              onClick={() => this.makeawkward.play()}
-            >
+              onClick={() => this.makeawkward.play()}>
               自己的尷尬要自！己！創！造！
             </Button>
           </Segment>
